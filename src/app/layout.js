@@ -13,8 +13,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={geist.className}>
+    <html lang="en" style={{ colorScheme: "light" }}>
+      <body
+        className={geist.className}
+        style={{ backgroundColor: "white", color: "black" }}
+      >
         <CartProvider>
           <Nav />
           {children}
