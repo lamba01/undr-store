@@ -64,12 +64,24 @@ export default function Nav() {
   return (
     <>
       {/* Announcement Bar */}
-      <div className="bg-black text-white text-center py-2.5 text-xs tracking-widest relative z-50">
-        New arrivals just dropped &nbsp;·&nbsp;
-        <span className="text-[#c9a96e]">
-          Free delivery on orders over ₦50,000
-        </span>
-        &nbsp;·&nbsp; Use code UNDR10 for 10% off
+      <div className="bg-black text-white py-2.5 overflow-hidden relative z-50">
+        <div className="flex w-max animate-[marquee_20s_linear_infinite]">
+          {[...Array(4)].map((_, i) => (
+            <div
+              key={i}
+              className="flex items-center whitespace-nowrap text-xs tracking-widest uppercase pr-12"
+            >
+              <span>New arrivals just dropped</span>
+              <span className="mx-3">•</span>
+
+              <span className="text-[#c9a96e]">
+                We&apos;re live! Shop Now at UNDR. Store
+              </span>
+
+              <span className="mx-3">•</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* Main Nav */}
