@@ -13,7 +13,7 @@ export default function FeaturedCategory({
     <section className="max-w-7xl mx-auto px-6 py-16">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-0">
         {/* Left - Text side */}
-        <div className="bg-black text-white flex flex-col justify-center px-5 py-5 sm:px-12 sm:py-16">
+        <div className="bg-black text-white flex flex-col justify-center text-center sm:text-start px-5 py-5 sm:px-12 sm:py-16">
           <p className="text-xs tracking-[0.2em] uppercase text-neutral-400 mb-4">
             Featured Collection
           </p>
@@ -27,7 +27,7 @@ export default function FeaturedCategory({
           </p>
           <Link
             href={`/store?category=${slug}`}
-            className="inline-flex items-center gap-2 bg-white text-black px-8 py-4 text-xs tracking-widest uppercase hover:bg-neutral-200 transition-colors w-fit"
+            className="inline-flex items-center justify-center w-full sm:w-fit gap-2 bg-white text-center text-black sm:px-12 py-4 text-xs tracking-widest uppercase hover:bg-neutral-200 transition-colors"
           >
             {label}
             <svg

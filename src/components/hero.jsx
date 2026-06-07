@@ -57,11 +57,11 @@ export default function Hero() {
             <div className="absolute inset-0 bg-linear-to-t from-black/65 via-black/15 to-black/30" />
 
             {/* Content */}
-            <div className="absolute bottom-20 left-0 px-10 sm:left-14 sm:right-14 text-white">
+            <div className="absolute bottom-20 left-0 px-7 sm:left-14 sm:right-14 text-white">
               <p className="text-xs tracking-[0.14em] uppercase text-white/70 mb-3">
                 {slide.tag}
               </p>
-              <h1 className="text-5xl font-normal leading-tight mb-3 tracking-tight">
+              <h1 className="sm:text-5xl text-3xl font-normal leading-tight mb-3 tracking-tight">
                 {slide.title[0]}
                 <br />
                 <em className="text-[#e8d5b8] italic">{slide.title[1]}</em>
@@ -91,7 +91,7 @@ export default function Hero() {
       </div>
 
       {/* Arrows */}
-      <button
+      {/* <button
         onClick={() => goTo(cur - 1)}
         className="absolute left-5 top-1/2 -translate-y-1/2 z-10 w-11 h-11 flex items-center justify-center border border-white/30 bg-white/15 text-white hover:bg-white/25 transition-colors backdrop-blur-sm"
         aria-label="Previous slide"
@@ -122,7 +122,7 @@ export default function Hero() {
         >
           <path d="M9 18l6-6-6-6" />
         </svg>
-      </button>
+      </button> */}
 
       {/* Dots */}
       <div className="absolute bottom-7 left-1/2 -translate-x-1/2 z-10 flex gap-2">

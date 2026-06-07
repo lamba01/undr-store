@@ -13,6 +13,7 @@ export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [categoryOpen, setCategoryOpen] = useState(false);
+  const [mobileCategoryOpen, setMobileCategoryOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   //   const [categories, setCategories] = useState([]);
@@ -325,7 +326,8 @@ export default function Nav() {
             </Link>
 
             <button
-              onClick={() => setCategoryOpen(!categoryOpen)}
+              // onClick={() => setCategoryOpen(!categoryOpen)}
+              onClick={() => setMobileCategoryOpen(!mobileCategoryOpen)}
               className="px-6 py-4 text-xs tracking-widest uppercase text-neutral-600 hover:text-black hover:bg-neutral-50 border-b border-neutral-100 flex items-center justify-between"
             >
               Categories
@@ -342,14 +344,14 @@ export default function Nav() {
               </svg>
             </button>
 
-            {categoryOpen && (
+            {mobileCategoryOpen && (
               <>
                 <Link
                   href="/store"
                   className="px-10 py-3 text-xs tracking-widest uppercase text-neutral-500 hover:text-black hover:bg-neutral-50 border-b border-neutral-50"
                   onClick={() => {
                     setMenuOpen(false);
-                    setCategoryOpen(false);
+                    setMobileCategoryOpen(false);
                   }}
                 >
                   All Products
@@ -358,13 +360,13 @@ export default function Nav() {
                   <Link
                     key={cat.id}
                     href={`/store?category=${cat.slug}`}
-                    className="px-10 py-3 text-xs tracking-widest uppercase text-neutral-500 hover:text-black hover:bg-neutral-50 border-b border-neutral-50"
+                    className="relative z-10 block px-10 py-3 text-xs tracking-widest uppercase text-neutral-500 hover:text-black hover:bg-neutral-50 border-b border-neutral-50"
                     onClick={() => {
                       setMenuOpen(false);
-                      setCategoryOpen(false);
+                      setMobileCategoryOpen(false);
                     }}
                   >
-                    {cat.title}
+                    {cat.title}s
                   </Link>
                 ))}
               </>
