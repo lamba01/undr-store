@@ -2,6 +2,7 @@ import { getProduct, getProducts } from "@/lib/payload";
 import { notFound } from "next/navigation";
 import ProductImages from "@/components/ProductImages";
 import ProductDetails from "@/components/ProductDetails";
+import { getImageUrl } from "@/lib/utils";
 
 export default async function ProductPage({ params }) {
   const { slug } = await params;
@@ -40,10 +41,10 @@ export default async function ProductPage({ params }) {
                   href={`/store/${product.slug}`}
                   className="group"
                 >
-                  <div className="aspect-[3/4] bg-neutral-100 overflow-hidden mb-3">
+                  <div className="aspect-3/4 bg-neutral-100 overflow-hidden mb-3">
                     {product?.gallery?.[0]?.image?.url && (
                       <img
-                        src={`${process.env.NEXT_PUBLIC_PAYLOAD_URL}${product.gallery[0].image.url}`}
+                        src={getImageUrl(product.gallery[0].image.url)}
                         alt={product.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />

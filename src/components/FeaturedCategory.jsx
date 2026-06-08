@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 const PAYLOAD_URL = process.env.NEXT_PUBLIC_PAYLOAD_URL;
+import { getImageUrl } from "@/lib/utils";
 // import Image from "next/image";
 
 export default function FeaturedCategory({
@@ -54,7 +55,7 @@ export default function FeaturedCategory({
             >
               {product?.gallery?.[0]?.image?.url ? (
                 <img
-                  src={`${PAYLOAD_URL}${product.gallery[0].image.url}`}
+                  src={getImageUrl(product.gallery[0].image.url)}
                   alt={product.title}
                   width={200}
                   height={200}
