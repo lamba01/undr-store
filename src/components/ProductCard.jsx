@@ -42,7 +42,11 @@ const PAYLOAD_URL = process.env.NEXT_PUBLIC_PAYLOAD_URL;
 
 export default function ProductCard({ product }) {
   const image = product?.gallery?.[0]?.image;
-  const imageUrl = image?.url ? `${PAYLOAD_URL}${image.url}` : null;
+  const imageUrl = image?.url
+    ? image.url.startsWith("http")
+      ? image.url.split("?")[0]
+      : `${PAYLOAD_URL}${image.url}`
+    : null;
 
   return (
     <Link href={`/store/${product.slug}`} className="group">
