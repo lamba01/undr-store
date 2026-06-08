@@ -1,4 +1,3 @@
-/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -8,9 +7,18 @@ const nextConfig = {
         port: "3000",
         pathname: "/api/media/**",
       },
+      {
+        protocol: "https",
+        hostname: "undr-server.onrender.com",
+        pathname: "/api/media/**",
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        pathname: "/**",
+      },
     ],
   },
-  /* config options here */
   reactCompiler: true,
 };
 
