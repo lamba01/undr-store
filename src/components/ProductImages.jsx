@@ -55,6 +55,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { getImageUrl } from "@/lib/utils";
 
 export default function ProductImages({ gallery = [], title }) {
@@ -79,7 +80,7 @@ export default function ProductImages({ gallery = [], title }) {
               onClick={() => setActive(i)}
               className={`aspect-square overflow-hidden border-2 transition-colors ${active === i ? "border-black" : "border-transparent"}`}
             >
-              <img
+              <Image
                 src={getImageUrl(item.image.url)}
                 alt={`${title} ${i + 1}`}
                 className="w-full h-full object-cover"
@@ -89,7 +90,7 @@ export default function ProductImages({ gallery = [], title }) {
         </div>
       )}
       <div className="flex-1 aspect-3/4 overflow-hidden bg-neutral-100 relative">
-        <img
+        <Image
           src={getImageUrl(images[active].image.url)}
           alt={title}
           className="w-full h-full object-cover"

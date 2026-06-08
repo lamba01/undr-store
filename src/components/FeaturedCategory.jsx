@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const PAYLOAD_URL = process.env.NEXT_PUBLIC_PAYLOAD_URL;
 import { getImageUrl } from "@/lib/utils";
-// import Image from "next/image";
+import Image from "next/image";
 
 export default function FeaturedCategory({
   products = [],
@@ -54,7 +54,7 @@ export default function FeaturedCategory({
               className="group relative aspect-square overflow-hidden bg-neutral-200"
             >
               {product?.gallery?.[0]?.image?.url ? (
-                <img
+                <Image
                   src={getImageUrl(product.gallery[0].image.url)}
                   alt={product.title}
                   width={200}

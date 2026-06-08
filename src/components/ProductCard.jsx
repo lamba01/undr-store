@@ -37,6 +37,7 @@
 // }
 
 import Link from "next/link";
+import Image from "next/image";
 
 const PAYLOAD_URL = process.env.NEXT_PUBLIC_PAYLOAD_URL;
 
@@ -52,7 +53,7 @@ export default function ProductCard({ product }) {
     <Link href={`/store/${product.slug}`} className="group">
       <div className="relative aspect-3/4 bg-neutral-100 overflow-hidden mb-3">
         {imageUrl ? (
-          <img
+          <Image
             src={imageUrl}
             alt={image?.alt || product.title}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

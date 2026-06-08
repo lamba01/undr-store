@@ -2,6 +2,7 @@
 
 import { useCart } from "@/context/CartContext";
 import Link from "next/link";
+import { getImageUrl } from "@/lib/utils";
 import Image from "next/image";
 
 const PAYLOAD_URL = process.env.NEXT_PUBLIC_PAYLOAD_URL;
@@ -57,8 +58,8 @@ export default function CartPage() {
               <Link href={`/store/${item.slug}`} className="shrink-0">
                 <div className="w-24 h-32 bg-neutral-100 overflow-hidden">
                   {item.image ? (
-                    <img
-                      src={`${PAYLOAD_URL}${item.image}`}
+                    <Image
+                      src={getImageUrl(item.image)}
                       alt={item.title}
                       className="w-full h-full object-cover"
                     />
