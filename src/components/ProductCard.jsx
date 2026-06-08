@@ -56,6 +56,8 @@ export default function ProductCard({ product }) {
           <Image
             src={imageUrl}
             alt={image?.alt || product.title}
+            width={300}
+            height={400}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
           />
         ) : (

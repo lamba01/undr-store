@@ -119,26 +119,10 @@ export default function Footer() {
           <ul className="space-y-3">
             <li>
               <Link
-                href="/faq"
-                className="text-sm text-neutral-300 hover:text-white transition-colors"
-              >
-                FAQ
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="/shipping"
                 className="text-sm text-neutral-300 hover:text-white transition-colors"
               >
                 Shipping & Delivery
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/returns"
-                className="text-sm text-neutral-300 hover:text-white transition-colors"
-              >
-                Returns & Exchanges
               </Link>
             </li>
             <li>

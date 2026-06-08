@@ -62,6 +62,8 @@ export default function CartPage() {
                       src={getImageUrl(item.image)}
                       alt={item.title}
                       className="w-full h-full object-cover"
+                      width={200}
+                      height={300}
                     />
                   ) : (
                     <div className="w-full h-full bg-neutral-100" />

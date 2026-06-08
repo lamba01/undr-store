@@ -209,7 +209,7 @@ export default function Nav() {
               </button>
 
               {/* Login */}
-              <Link
+              {/* <Link
                 href="/account"
                 className="hidden sm:flex items-center gap-1.5 text-xs tracking-widest uppercase text-neutral-600 hover:text-black transition-colors"
               >
@@ -225,7 +225,7 @@ export default function Nav() {
                   <circle cx="12" cy="7" r="4" />
                 </svg>
                 <span className="hidden lg:inline">Login</span>
-              </Link>
+              </Link> */}
 
               {/* Cart */}
               {/* <Link
@@ -384,13 +384,13 @@ export default function Nav() {
               </>
             )}
 
-            <Link
+            {/* <Link
               href="/account"
               className="px-6 py-4 text-xs tracking-widest uppercase text-neutral-600 hover:text-black hover:bg-neutral-50 border-b border-neutral-100"
               onClick={() => setMenuOpen(false)}
             >
               Login / Register
-            </Link>
+            </Link> */}
           </nav>
         </div>
       </header>
