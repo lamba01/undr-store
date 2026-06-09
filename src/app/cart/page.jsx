@@ -58,7 +58,7 @@ export default function CartPage() {
               <Link href={`/store/${item.slug}`} className="shrink-0">
                 <div className="w-24 h-32 bg-neutral-100 overflow-hidden">
                   {item.image ? (
-                    <Image
+                    <img
                       src={getImageUrl(item.image)}
                       alt={item.title}
                       className="w-full h-full object-cover"

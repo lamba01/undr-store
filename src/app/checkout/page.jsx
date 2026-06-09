@@ -4,6 +4,8 @@ import { useState } from "react";
 import { useCart } from "@/context/CartContext";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { getImageUrl } from "@/lib/utils";
+import Image from "next/image";
 
 const PAYLOAD_URL = process.env.NEXT_PUBLIC_PAYLOAD_URL;
 
@@ -433,8 +435,8 @@ export default function CheckoutPage() {
                   <div key={item.key} className="flex gap-3">
                     <div className="w-14 h-18 bg-neutral-100 shrink-0 overflow-hidden">
                       {item.image && (
-                        <img
-                          src={`${PAYLOAD_URL}${item.image}`}
+                        <Image
+                          src={getImageUrl(product.gallery[0].image.url)}
                           alt={item.title}
                           className="w-full h-full object-cover"
                         />
