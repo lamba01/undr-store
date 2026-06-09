@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useCart } from "@/context/CartContext";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { getImageUrl } from "@/lib/utils";
 
 const PAYLOAD_URL = process.env.NEXT_PUBLIC_PAYLOAD_URL;
 
