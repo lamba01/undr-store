@@ -15,7 +15,7 @@ export default function ContactPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
         {/* WhatsApp */}
         <a
-          href="https://wa.me/234XXXXXXXXXX"
+          href="https://wa.me/2347046038021"
           target="_blank"
           rel="noopener noreferrer"
           className="border border-neutral-200 p-6 hover:border-black transition-colors group"
@@ -30,63 +30,54 @@ export default function ContactPage() {
           </h3>
           <p className="text-xs text-neutral-500">Chat with us directly</p>
           <p className="text-xs text-black mt-2 group-hover:underline">
-            +234 XXX XXX XXXX
+            +234 704 603 8021
           </p>
         </a>
 
-        {/* Instagram */}
+        {/* TikTok */}
         <a
-          href="https://instagram.com/undr"
+          href="https://tiktok.com/@undr.ng"
           target="_blank"
           rel="noopener noreferrer"
           className="border border-neutral-200 p-6 hover:border-black transition-colors group"
         >
           <div className="w-10 h-10 bg-black flex items-center justify-center mb-4">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
-              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+              <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z" />
             </svg>
           </div>
           <h3 className="text-sm font-medium tracking-widest uppercase mb-1">
-            Instagram
+            TikTok
           </h3>
-          <p className="text-xs text-neutral-500">Follow us for new arrivals</p>
-          <p className="text-xs text-black mt-2 group-hover:underline">@undr</p>
-        </a>
-
-        {/* Email */}
-        <a
-          href="mailto:hello@undr.com"
-          className="border border-neutral-200 p-6 hover:border-black transition-colors group"
-        >
-          <div className="w-10 h-10 bg-black flex items-center justify-center mb-4">
-            <svg
-              width="20"
-              height="20"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="white"
-              strokeWidth="2"
-            >
-              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-              <polyline points="22,6 12,13 2,6" />
-            </svg>
-          </div>
-          <h3 className="text-sm font-medium tracking-widest uppercase mb-1">
-            Email
-          </h3>
-          <p className="text-xs text-neutral-500">We reply within 24 hours</p>
+          <p className="text-xs text-neutral-500">Watch our latest content</p>
           <p className="text-xs text-black mt-2 group-hover:underline">
-            hello@undr.com
+            @undr.ng
           </p>
         </a>
 
-        {/* Location */}
+        {/* Snapchat */}
         <a
-          href="https://maps.google.com/?q=Lagos, Nigeria"
+          href="https://snapchat.com/add/undr.ng"
           target="_blank"
           rel="noopener noreferrer"
           className="border border-neutral-200 p-6 hover:border-black transition-colors group"
         >
+          <div className="w-10 h-10 bg-black flex items-center justify-center mb-4">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
+              <path d="M12.065 2c1.59.006 4.804.434 6.034 3.567.39.977.3 2.644.21 3.937-.017.24-.033.469-.044.685.127.065.293.13.49.13.34 0 .668-.148.957-.44a.494.494 0 01.656-.039c.228.174.32.463.225.72-.266.726-1.045 1.234-2.015 1.373-.007.033-.012.067-.02.1.018.057.06.178.163.362.41.733 1.275 1.617 2.79 2.122a.499.499 0 01.337.497c-.006.075-.071.748-.923 1.25-.394.232-.87.39-1.415.472-.097.015-.195.032-.296.05-.163.03-.332.062-.52.104-.232.053-.408.224-.497.483-.066.192-.209.612-.756.612a1.63 1.63 0 01-.568-.118c-.437-.155-.895-.234-1.363-.234-.3 0-.594.034-.876.1-.517.125-1.003.425-1.511.738-.673.413-1.37.841-2.307.841-.037 0-.073-.001-.11-.003h-.085c-.936 0-1.634-.428-2.306-.84-.509-.314-.995-.614-1.512-.74a4.697 4.697 0 00-.875-.099c-.468 0-.926.079-1.363.234a1.63 1.63 0 01-.568.118c-.547 0-.69-.42-.757-.614-.088-.257-.263-.428-.494-.48-.19-.043-.36-.075-.524-.105a7.203 7.203 0 00-.295-.05c-.545-.081-1.02-.239-1.415-.471-.852-.502-.917-1.175-.923-1.25a.499.499 0 01.337-.497c1.516-.505 2.381-1.39 2.79-2.122.104-.185.145-.305.164-.363a2.915 2.915 0 00-.02-.099c-.97-.139-1.748-.647-2.015-1.373a.497.497 0 01.225-.72.495.495 0 01.656.038c.29.293.618.441.957.441.198 0 .364-.065.492-.13-.011-.216-.027-.445-.044-.685-.09-1.293-.18-2.96.21-3.937C7.131 2.434 10.345 2.006 11.935 2h.13z" />
+            </svg>
+          </div>
+          <h3 className="text-sm font-medium tracking-widest uppercase mb-1">
+            Snapchat
+          </h3>
+          <p className="text-xs text-neutral-500">Add us on Snapchat</p>
+          <p className="text-xs text-black mt-2 group-hover:underline">
+            @undr.ng
+          </p>
+        </a>
+
+        {/* Location */}
+        <div className="border border-neutral-200 p-6">
           <div className="w-10 h-10 bg-black flex items-center justify-center mb-4">
             <svg
               width="20"
@@ -103,11 +94,20 @@ export default function ContactPage() {
           <h3 className="text-sm font-medium tracking-widest uppercase mb-1">
             Location
           </h3>
-          <p className="text-xs text-neutral-500">Lagos, Nigeria</p>
-          <p className="text-xs text-black mt-2 group-hover:underline">
-            Available for pickup by appointment
+          <p className="text-xs text-neutral-500 mb-2">
+            D&apos;Agora 6, Bisola Durosimi Etti
+            <br />
+            Lekki Phase 1, Lagos
           </p>
-        </a>
+          <a
+            href="https://maps.google.com/?q=D'Agora+6+Bisola+Durosimi+Etti+Lekki+Phase+1+Lagos"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-xs text-black underline hover:text-neutral-600 transition-colors"
+          >
+            View on Google Maps →
+          </a>
+        </div>
       </div>
 
       {/* Business Hours */}

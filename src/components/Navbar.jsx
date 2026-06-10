@@ -185,6 +185,13 @@ export default function Nav() {
                   ))}
                 </div>
               </div>
+              <Link
+                href="/contact"
+                className="text-xs tracking-widest uppercase text-neutral-600 hover:text-black transition-colors relative group"
+              >
+                Contact Us
+                <span className="absolute -bottom-1 left-0 w-0 h-px bg-black transition-all duration-300 group-hover:w-full" />
+              </Link>
             </nav>
 
             {/* Right Icons */}
@@ -383,14 +390,13 @@ export default function Nav() {
                 ))}
               </>
             )}
-
-            {/* <Link
-              href="/account"
+            <Link
+              href="/contact"
               className="px-6 py-4 text-xs tracking-widest uppercase text-neutral-600 hover:text-black hover:bg-neutral-50 border-b border-neutral-100"
               onClick={() => setMenuOpen(false)}
             >
-              Login / Register
-            </Link> */}
+              contact us
+            </Link>
           </nav>
         </div>
       </header>
