@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const categories = [
   { title: "Men", slug: "men" },
@@ -17,11 +18,16 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-4 gap-12">
         {/* Brand */}
         <div className="md:col-span-1">
-          <h3 className="text-xl font-medium tracking-[0.16em] uppercase mb-4">
-            UNDR.
-          </h3>
+          <Image
+            src="/images/logo.png"
+            alt="UNDR."
+            width={120}
+            height={40}
+            //   style={{ width: "auto", height: "40px" }}
+            className="object-contain mb-0 pb-0"
+          />
           <p className="text-sm text-neutral-400 leading-relaxed mb-6">
-            Curated fashion for every version of you. New arrivals weekly.
+            What lies <strong>UNDR</strong>
           </p>
           {/* Social Links */}
           <div className="flex items-center gap-4">
