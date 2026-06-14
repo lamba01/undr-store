@@ -6,7 +6,7 @@ import Link from "next/link";
 const slides = [
   {
     image: "/images/hero-1.jpg",
-    tag: "New Season · Summer 2025",
+    tag: "New Season · Summer 2026",
     title: ["Dress for every", "moment that matters"],
     subtitle:
       "Curated styles for the modern woman. From everyday elegance to occasion wear.",
